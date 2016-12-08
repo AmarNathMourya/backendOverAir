@@ -1,0 +1,54 @@
+<div ng-controller="adminController">
+	<div class="center"> <h1> REALTIME DATA ADMIN DASHBOARD </h1>  </div>
+        <div>
+        	<h3>FIRST GROUP</h3>
+			<table class="table left">
+			     <thead class="thead-inverse">
+			     	<tr>
+						<th>USER NAME</th>
+						<th>SCORE</th>
+						<th>DEVICE ID</th>
+				    </tr>
+			     </thead>
+			     <tr ng-repeat="grp1Data in filterGrp1Data">
+			     	<td> {{grp1Data.cookie_val}} </td>
+			     	<td> {{grp1Data.click_cnt}} </td>
+			     	<td> {{grp1Data.bcon_id}} </td>
+			     </tr>
+			     <tr>
+			        <td> Total </td>
+			     	<td> {{grp1Total}} </td>
+			     </tr>
+			</table>
+			<h3 id="heading2" align="right">SECOND GROUP</h3>
+			<table class="table right">
+				<thead class="thead-inverse">
+			     	<tr>
+						<th>USER NAME</th>
+						<th>SCORE</th>
+						<th>DEVICE ID</th>
+				    </tr>
+			     </thead>
+			     <tr ng-repeat="grp2Data in filterGrp2Data">
+			     	<td> {{grp2Data.cookie_val}} </td>
+			     	<td> {{grp2Data.click_cnt}} </td>
+			     	<td> {{grp2Data.bcon_id}} </td>
+			     	<td> {{grp2Total}} </td>
+			     </tr>
+			     <tr>
+			        <td> Total </td>
+			     	<td> {{grp2Total}} </td>
+			     </tr>
+			</table>
+        </div>
+ <!-- Slider for comprasion -->
+	<hr id="horizental">
+	<hr class="verticle">
+	<div align="center"> <img ng-src="images/images.jpeg" ng-style=imgStyle> </div>
+	<!-- <div class="Bcn_div" ng-show="hideBtn" align="center">
+	</div> -->
+		<span id="bconDiv" ng-show="hideBtn"> BCON ID : {{saveBconId}} </span> 
+	<div class="btndiv" ng-hide="hideBtn">
+	   <button type="button" class="btn btn-primary btn-lg" ng-click="SaveBconData()">Submit</button>
+	</div>
+</div>

@@ -1,0 +1,85 @@
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.btndiv {
+	margin-left: 559px;
+    margin-top: 246px;
+    padding: 10px;
+    width: 60%;
+}
+
+
+.block {
+    background-color: #000819;
+    height: 45px;
+    left: 50px;
+    margin-left: 572px;
+    margin-top: -64px;
+    position: absolute;
+    width: 55px;
+  }
+  #horizental { 
+    border-style: inset;
+    border-width: 5px;
+    background-color: #ed1d61;
+    display: block;
+    margin-top: 190px;
+} 
+
+.verticle {
+    transform:rotate(90deg);
+    border-style: inset;
+    background-color: #ed1d61;
+    border-width: 1px;
+    display: block;
+    height: 3px;
+    margin-top: -24px;
+    width: 24px;
+}
+
+.btn {
+    margin-top: -234px;
+}
+#bconDiv {
+   margin-top: -235px;
+   margin-left: 571px;
+   color: blue;
+   font-weight: bold; 
+   font-size: 200%;
+}
+.Bcn_div {
+    margin-left: 559px;
+    margin-top: 147px;
+    padding: 10px;
+    width: 60%;
+}
+
+.btn-primary {
+    width: 162px;
+}
+
+
+table {
+   border: 1px solid black !important;
+   width: 30% !important;
+}
+
+.right {
+    position: absolute !important;
+    right: 0px !important;
+    width: 30% !important;
+    margin-top: -94px !important;
+    padding: 10px !important;
+}
+#heading2 {
+    position: absolute !important;
+    margin-left: 986px !important;
+    margin-top: -132px !important;
+}
+img {
+     margin-top: -226px !important;
+}
